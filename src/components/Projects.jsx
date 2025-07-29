@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import TalkzillaPic from '../assets/TalkzillaPic.png'
 import PrepversePic from '../assets/PrepversePic.png'
-import WanderlustPic from '../assets/WanderlustPic.png'
+import WanderlustPic from '../assets/WanderLustPic.png'
 
 export default function Projects({ darkMode, textEnter, textLeave }) {
   const projects = [
