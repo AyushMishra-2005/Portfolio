@@ -4,7 +4,7 @@ import { FiDownload, FiCode, FiCpu, FiDatabase, FiBook } from 'react-icons/fi';
 export default function About({ darkMode }) {
   return (
     <section id="about" className={`py-24`}>
-      <div className="container mx-auto w-full">
+      <div className="container mx-auto w-full px-6">
         <motion.h2 
           className="text-4xl font-bold mb-16 text-center"
           initial={{ opacity: 0, y: 20 }}

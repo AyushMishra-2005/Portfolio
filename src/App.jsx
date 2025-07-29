@@ -105,7 +105,7 @@ export default function App() {
         textLeave={textLeave}
       />
 
-      <main className='px-20'>
+      <main className='px-0 md:px-10 lg:px-20'>
         <Hero darkMode={darkMode} textEnter={textEnter} textLeave={textLeave} />
         <About darkMode={darkMode} />
         <Skills darkMode={darkMode} />

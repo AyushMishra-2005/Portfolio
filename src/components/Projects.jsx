@@ -37,7 +37,7 @@ export default function Projects({ darkMode, textEnter, textLeave }) {
 
   return (
     <section id="projects" className={`py-24`}>
-      <div className="container mx-auto w-full">
+      <div className="container mx-auto w-full px-6">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
