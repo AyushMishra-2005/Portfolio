@@ -1,4 +1,5 @@
 import { CometCard } from "./ui/comet-card.jsx";
+import profilePicImage from '../assets/profilePic1.jpg'
 
 export function ProfilePicCard() {
   return (
@@ -18,9 +19,9 @@ export function ProfilePicCard() {
             <div className="w-full h-full rounded-full bg-black">
               <img
                 loading="lazy"
-                className="h-full w-full rounded-full object-cover contrast-75"
+                className="h-full w-full rounded-full object-cover"
                 alt="Invite background"
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                src={profilePicImage}
                 style={{
                   boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
                   opacity: 1,

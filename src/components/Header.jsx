@@ -98,7 +98,7 @@ export default function Header({ darkMode, setDarkMode, activeSection, textEnter
           </motion.button>
           
           <motion.a 
-            href="https://github.com" 
+            href="https://github.com/AyushMishra-2005" 
             target="_blank" 
             rel="noopener noreferrer"
             className={`p-2 rounded-full ${
