@@ -86,16 +86,9 @@ export default function App() {
   };
 
   return (
-    <div className={`relative min-h-screen transition-colors duration-500 ${darkMode ? 'text-gray-100' : 'text-gray-900'}`}>
+    <div className={`relative min-h-screen transition-colors duration-500 ${darkMode ? 'text-gray-100' : 'text-gray-900'} w-[100vw] pr-3`}>
       <Background darkMode={darkMode} />
-      <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-50"
-        style={{
-          x: springX,
-          y: springY,
-          ...cursorStyle,
-        }}
-      />
+      
 
       <Header
         darkMode={darkMode}
@@ -105,7 +98,7 @@ export default function App() {
         textLeave={textLeave}
       />
 
-      <main className='px-0 md:px-10 lg:px-15'>
+      <main className='flex-col items-center justify-center px-5 md:px-15 lg:px-25'>
         <Hero darkMode={darkMode} textEnter={textEnter} textLeave={textLeave} />
         <About darkMode={darkMode} />
         <Skills darkMode={darkMode} />

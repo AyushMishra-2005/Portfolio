@@ -5,8 +5,8 @@ import {ProfilePicCard} from './ProfilePicCard.jsx'
 
 export default function Hero({ darkMode, textEnter, textLeave }) {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-20">
-      <div className="container mx-auto px-6 py-20 md:py-0 flex flex-col md:flex-row items-center">
+    <section id="home" className="min-h-screen flex items-center pt-20 justify-center w-full">
+      <div className="container mx-auto px-6 py-20 md:py-0 flex justify-between flex-col md:flex-row items-center">
         <motion.div
           className="md:w-1/2 mb-10 md:mb-0"
           initial={{ opacity: 0, x: -50 }}
@@ -98,7 +98,6 @@ export default function Hero({ darkMode, textEnter, textLeave }) {
         </motion.div>
 
         <motion.div
-          className="md:w-1/2 flex justify-center"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}

@@ -6,7 +6,7 @@ export function ProfilePicCard() {
     <CometCard>
       <button
         type="button"
-        className="my-10 flex w-80 h-80 cursor-pointer items-center justify-center rounded-full border-0 bg-[#1F2121] md:my-20"
+        className="my-10 flex w-90 h-90 cursor-pointer items-center justify-center rounded-full border-0 bg-[#1F2121] md:my-20"
         aria-label="View invite F7RA"
         style={{
           transformStyle: "preserve-3d",

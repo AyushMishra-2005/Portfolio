@@ -139,7 +139,7 @@ export default function Projects({ darkMode, textEnter, textLeave }) {
           transition={{ duration: 0.5, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <a
+          <motion.a
             href="#"
             className={`inline-flex items-center px-8 py-3.5 rounded-xl font-medium transition-all ${darkMode ? 'bg-blue-600 hover:bg-blue-700' : 'bg-blue-500 hover:bg-blue-600'} text-white shadow-lg hover:shadow-xl`}
             whileHover={{
@@ -151,7 +151,7 @@ export default function Projects({ darkMode, textEnter, textLeave }) {
             onMouseLeave={textLeave}
           >
             View All Projects
-          </a>
+          </motion.a>
         </motion.div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+import { motion } from "framer-motion";
 
 export function Typewriter() {
   const words = [
@@ -17,11 +18,18 @@ export function Typewriter() {
   ];
 
   return (
-    <div className="flex justify-start w-full">
-      <TypewriterEffectSmooth 
-        words={words}
-        cursorClassName="bg-blue-500 dark:bg-blue-400"
-      />
+    <div className="flex justify-start w-full overflow-hidden">
+      <motion.div
+        initial={{ width: 0 }}
+        whileInView={{ width: "fit-content" }}
+        transition={{ duration: 2, ease: "easeInOut" }}
+        viewport={{ once: true }}
+      >
+        <TypewriterEffectSmooth 
+          words={words}
+          cursorClassName="bg-blue-500 dark:bg-blue-400"
+        />
+      </motion.div>
     </div>
   );
 }

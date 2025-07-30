@@ -17,13 +17,13 @@ export default function About({ darkMode }) {
         
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <motion.div 
-            className="lg:w-2/5 flex justify-center"
+            className="lg:w-2/5 flex justify-between"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <div className={`w-72 h-72 rounded-lg overflow-hidden shadow-xl ${darkMode ? 'border-gray-700' : 'border-gray-200'} border-2`}>
+            <div className={`w-80 h-80 rounded-lg overflow-hidden shadow-xl ${darkMode ? 'border-gray-700' : 'border-gray-200'} border-2`}>
               <img 
                 src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
                 alt="About" 
