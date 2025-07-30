@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Background from './components/Background';
+import CustomCursor from './components/CustomCursor';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -77,36 +78,39 @@ export default function App() {
           ? 'rgb(96 165 250)'
           : 'rgb(37 99 235)'
         : cursorVariant === 'click'
-        ? darkMode
-          ? 'rgb(236 72 153)'
-          : 'rgb(219 39 119)'
-        : 'rgb(59 130 246)',
+          ? darkMode
+            ? 'rgb(236 72 153)'
+            : 'rgb(219 39 119)'
+          : 'rgb(59 130 246)',
     mixBlendMode: cursorVariant === 'text' ? 'difference' : 'normal',
     transition: 'width 0.2s ease, height 0.2s ease, background-color 0.2s ease',
   };
 
   return (
-    <div className={`relative min-h-screen transition-colors duration-500 ${darkMode ? 'text-gray-100' : 'text-gray-900'} w-[100vw] pr-3`}>
-      <Background darkMode={darkMode} />
-      
+    <>
+      <CustomCursor/>
+      <div className={`relative min-h-screen transition-colors duration-500 ${darkMode ? 'text-gray-100' : 'text-gray-900'} w-[100vw] pr-3`}>
+        <Background darkMode={darkMode} />
 
-      <Header
-        darkMode={darkMode}
-        setDarkMode={setDarkMode}
-        activeSection={activeSection}
-        textEnter={textEnter}
-        textLeave={textLeave}
-      />
 
-      <main className='flex-col items-center justify-center px-5 md:px-15 lg:px-25'>
-        <Hero darkMode={darkMode} textEnter={textEnter} textLeave={textLeave} />
-        <About darkMode={darkMode} />
-        <Skills darkMode={darkMode} />
-        <Projects darkMode={darkMode} textEnter={textEnter} textLeave={textLeave} />
-        <Contact darkMode={darkMode} />
-      </main>
+        <Header
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+          activeSection={activeSection}
+          textEnter={textEnter}
+          textLeave={textLeave}
+        />
 
-      <Footer darkMode={darkMode} />
-    </div>
+        <main className='flex-col items-center justify-center px-5 md:px-15 lg:px-25'>
+          <Hero darkMode={darkMode} textEnter={textEnter} textLeave={textLeave} />
+          <About darkMode={darkMode} />
+          <Skills darkMode={darkMode} />
+          <Projects darkMode={darkMode} textEnter={textEnter} textLeave={textLeave} />
+          <Contact darkMode={darkMode} />
+        </main>
+
+        <Footer darkMode={darkMode} />
+      </div>
+    </>
   );
 }

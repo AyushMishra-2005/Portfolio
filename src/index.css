@@ -15,7 +15,7 @@
 
   overflow-x: hidden;
 }
-/* Stylish Scrollbar (Webkit Browsers: Chrome, Edge, Safari) */
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -37,8 +37,8 @@
   background: linear-gradient(180deg, #a855f7, #2563eb);
 }
 
-/* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: #6366f1 transparent;
+
 }

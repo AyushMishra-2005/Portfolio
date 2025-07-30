@@ -25,7 +25,7 @@ export default function Header({ darkMode, setDarkMode, activeSection, textEnter
   ];
 
   return (
-    <header className={`fixed w-[100vw] z-50 mt-4 flex justify-center items-center`}>
+    <header className={`fixed w-[100vw] z-50 mt-4 flex justify-center items-center cursor-pointer`}>
       <motion.div
         className={`container mx-auto px-6 sm:px-8 py-4 flex justify-between items-center rounded-full shadow-lg w-[80vw] ${darkMode ? 'bg-gray-900/90' : 'bg-white/95'} backdrop-blur-lg`}
         style={{
@@ -218,9 +218,9 @@ export default function Header({ darkMode, setDarkMode, activeSection, textEnter
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className={`absolute top-[90px] w-[80vw] rounded-xl p-4 z-40 backdrop-blur-md ${darkMode ? 'bg-gray-900/95 text-white' : 'bg-white/95 text-black'} shadow-xl`}
+            className={`absolute top-[90px] w-[80vw] rounded-xl p-4 z-40 backdrop-blur-md ${darkMode ? 'bg-gray-900/95 text-white' : 'bg-white/95 text-black'} shadow-xl cursor-pointer`}
           >
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-4 cursor-pointer">
               {navItems.map(item => (
                 <a
                   key={item.id}
@@ -238,7 +238,7 @@ export default function Header({ darkMode, setDarkMode, activeSection, textEnter
                   setDarkMode(!darkMode);
                   setIsMenuOpen(false);
                 }}
-                className="flex items-center gap-2 py-2"
+                className="flex items-center gap-2 py-2 cursor-pointer"
               >
                 {darkMode ? <FiSun /> : <FiMoon />}
                 <span>{darkMode ? 'Light Mode' : 'Dark Mode'}</span>
@@ -248,7 +248,7 @@ export default function Header({ darkMode, setDarkMode, activeSection, textEnter
                 href="https://github.com/AyushMishra-2005"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 py-2"
+                className="flex items-center gap-2 py-2 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <FiGithub />
