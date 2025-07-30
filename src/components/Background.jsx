@@ -24,7 +24,7 @@ export default function Background({ darkMode }) {
         <motion.div
           key={bubble.id}
           className={`absolute rounded-full ${
-            darkMode ? 'bg-gray-700 opacity-30' : 'bg-gray-300 opacity-40'
+            darkMode ? 'bg-gray-700 opacity-30' : 'bg-blue-400 opacity-40'
           }`}
           style={{
             left: `${bubble.x}%`,

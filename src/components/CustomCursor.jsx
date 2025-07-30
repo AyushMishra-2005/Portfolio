@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Cursor from '../assets/arrow.png';
 
+
 export default function CustomCursor() {
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const [isInteractive, setIsInteractive] = useState(false);
@@ -47,8 +48,8 @@ export default function CustomCursor() {
           position: 'fixed',
           left: pos.x,
           top: pos.y,
-          width: '32px',
-          height: '32px',
+          width: '25px',
+          height: '25px',
           pointerEvents: 'none',
           zIndex: 9999,
           transform: 'translate(-50%, -50%)',
