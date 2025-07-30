@@ -30,7 +30,7 @@ export default function Header({ darkMode, setDarkMode, activeSection, textEnter
         className={`container mx-auto px-6 sm:px-8 py-4 flex justify-between items-center rounded-full shadow-lg w-[80vw] ${darkMode ? 'bg-gray-900/90' : 'bg-white/95'} backdrop-blur-lg`}
         style={{
           marginLeft: '1rem',
-          marginRight: '1rem',
+          marginRight: '1.8rem',
           border: darkMode ? '1px solid rgba(255, 255, 255, 0.1)' : '1px solid rgba(0, 0, 0, 0.1)',
           boxShadow: darkMode
             ? '0 10px 30px -10px rgba(0, 0, 0, 0.3)'
