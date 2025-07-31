@@ -3,10 +3,9 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 
 export function Typewriter() {
   const sentences = [
-    ["Full-Stack", "Developer"],
-    ["AI/ML", "Enthusiast"],
-    ["Open", "Source", "Contributor"],
-    ["Tech", "Explorer"]
+    ["Full-Stack", "Developer."],
+    ["AI/ML", "Enthusiast."],
+    ["Tech", "Explorer."]
   ];
 
   const colorPalette = [
@@ -135,7 +134,7 @@ export function Typewriter() {
   }, [charIndex, deleting, sentenceIndex, wordIndex, displayText]);
 
   return (
-    <div className="text-3xl font-medium min-h-[3rem] flex flex-wrap justify-center items-center">
+    <div className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-medium min-h-[3rem] flex flex-wrap justify-center items-center">
       {displayText.map((word, i) => (
         <motion.span
           key={i}

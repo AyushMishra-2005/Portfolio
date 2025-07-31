@@ -27,7 +27,7 @@ export default function Header({ darkMode, setDarkMode, activeSection, textEnter
   return (
     <header className={`fixed w-[100vw] z-50 mt-4 flex justify-center items-center cursor-pointer`}>
       <motion.div
-        className={`container mx-auto px-6 sm:px-8 py-4 flex justify-between items-center rounded-full shadow-lg w-[80vw] ${darkMode ? 'bg-gray-900/90' : 'bg-white/95'} backdrop-blur-lg`}
+        className={`container mx-auto px-6 sm:px-8 py-4 flex justify-between items-center rounded-full shadow-lg w-[70vw] lg:w-[65vw] ${darkMode ? 'bg-gray-900/90' : 'bg-white/95'} backdrop-blur-lg`}
         style={{
           marginLeft: '1rem',
           marginRight: '1.8rem',

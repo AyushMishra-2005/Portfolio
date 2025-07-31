@@ -37,11 +37,7 @@ export default function CustomCursor() {
 
   return (
     <>
-      <style jsx global>{`
-        body * {
-          cursor: none !important;
-        }
-      `}</style>
+      <style>{`body { cursor: none; }`}</style>
 
       <div
         style={{

@@ -53,7 +53,7 @@ export default function Projects({ darkMode, textEnter, textLeave }) {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 lg:gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 lg:gap-10">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -111,12 +111,9 @@ export default function Projects({ darkMode, textEnter, textLeave }) {
               </div>
 
 
-              {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>{project.description}</p>
-
-                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag) => (
                     <span

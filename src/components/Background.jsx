@@ -9,7 +9,7 @@ export default function Background({ darkMode }) {
       id: Math.random().toString(36).substring(2, 9),
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: Math.random() * 3 + 1,
+      size: Math.random() * 2 + 1,
       duration: Math.random() * 20 + 10,
       delay: Math.random() * 5,
     }));
@@ -24,7 +24,7 @@ export default function Background({ darkMode }) {
         <motion.div
           key={bubble.id}
           className={`absolute rounded-full ${
-            darkMode ? 'bg-gray-700 opacity-30' : 'bg-blue-400 opacity-40'
+            darkMode ? 'bg-gray-700 opacity-30' : 'bg-blue-200 opacity-40'
           }`}
           style={{
             left: `${bubble.x}%`,
