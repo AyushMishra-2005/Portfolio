@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 dotenv.config();
 const app = express();
 app.use(cors({
-  origin: ["https://portfolio-z5jf.onrender.com", "http://localhost:5173/"]
+  origin: ["https://ayush-mishra-me.onrender.com", "http://localhost:5173/"]
 }));
 
 app.get("/github-contributions", async (req, res) => {

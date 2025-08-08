@@ -3,13 +3,14 @@ import CalendarHeatmap from "react-calendar-heatmap";
 import "react-calendar-heatmap/dist/styles.css";
 import "./heatmap.css";
 import { motion } from "framer-motion";
+import Server from '../envirnoment.js'
 
 export default function GitHubContributions({ darkMode }) {
   const [values, setValues] = useState([]);
   const [totalContributions, setTotalContributions] = useState(0);
 
   useEffect(() => {
-    fetch("http://localhost:4000/github-contributions")
+    fetch(`${Server}/github-contributions`)
       .then(res => res.json())
       .then(data => {
         const mapped = data.weeks.flatMap(week =>
